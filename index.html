@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shelf</title>
+  </head>
+  <body>
+    <main class="shelf">
+      <header>
+        <h1>Shelf</h1>
+        <p class="tagline">What you're reading, and what's next.</p>
+      </header>
+      <div class="controls">
+        <input id="search" type="search" placeholder="Search title or author" aria-label="Search" />
+        <select id="sort" aria-label="Sort">
+          <option value="title">Title</option>
+          <option value="rating">Rating</option>
+        </select>
+      </div>
+      <ul id="books" class="books"></ul>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

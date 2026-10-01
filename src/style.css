@@ -1,0 +1,15 @@
+:root { --bg: #fafafa; --card: #ffffff; --text: #171717; --muted: #6b6b6b; --line: #e5e5e5; color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg: #0a0a0a; --card: #171717; --text: #ededed; --muted: #a3a3a3; --line: #262626; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.5 system-ui, sans-serif; }
+.shelf { max-width: 720px; margin: 0 auto; padding: 48px 20px; }
+h1 { margin: 0; font-size: 32px; letter-spacing: -0.02em; }
+.tagline { margin: 4px 0 24px; color: var(--muted); }
+.controls { display: flex; gap: 8px; margin-bottom: 16px; }
+.controls input { flex: 1; }
+.controls input, .controls select { padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: inherit; font: inherit; }
+.books { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.book { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+.book h2 { margin: 0; font-size: 17px; color: #171717; }
+.author { margin: 2px 0 8px; color: var(--muted); }
+.rating { margin: 0; font-size: 14px; }
